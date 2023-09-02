@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Aparelhos from './components/Aparelhos';
-import VisualizarAparelho from './components/VisualizarAparelho';
-import NotFound from './components/NotFound';
+import Header from './Header';
+import Footer from './Footer';
+import Home from './Home';
+import Aparelhos from './Aparelhos';
+import VisualizarAparelho from './VisualizarAparelho';
+import NotFound from './NotFound';
 
 function App() {
   return (
     <Router>
       <Header />
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/aparelhos" exact component={Aparelhos} />
-        <Route path="/aparelhos/:id" component={VisualizarAparelho} />
+        <Route exact path="/" component={Home} />
+        <Route path="/aparelhos" component={Aparelhos} />
+        <Route path="/aparelho/:id" component={VisualizarAparelho} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
