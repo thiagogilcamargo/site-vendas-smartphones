@@ -2,11 +2,10 @@ const aparelhos = [
   {
     id: 1,
     nome: 'Smartphone 1',
-    descricao: 'Descrição do Smartphone 1...',
-    imagem: 'imagem1.jpg',
-    // Outros campos
+    descricao: 'Descrição do Smartphone 1.',
+    // Outros dados do aparelho
   },
-  // Adicione os outros aparelhos
+  // Adicione mais aparelhos
 ];
 
 export default aparelhos;
